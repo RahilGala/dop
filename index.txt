@@ -1,0 +1,8 @@
+filename                | short desc
+------------------------|--------------------------------------------------
+docker_html.txt         | Dockerfile and HTML for static Apache HTTPD website
+docker_php.txt          | Dockerfile, HTML form and PHP script for dynamic website
+freestyle_schedule.txt  | Freestyle job batch commands with cron scheduling
+jenkins_pipeline.txt    | Jenkins declarative pipeline script with Git clone and stages
+parameter_schedule.txt  | Jenkins pipeline with parameters, cron trigger and archiving
+pipeline_schedule.txt   | Jenkins pipeline for file creation and artifact archiving
