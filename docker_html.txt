@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dockerfile website</title>
+</head>
+<body>
+    <h1>Hello from Dockerfile!</h1>
+    <p>This is hosted using Dockerfile</p>
+</body>
+</html>
+
+FROM httpd:latest
+COPY index.html /usr/local/apache2/htdocs/
+EXPOSE 80
