@@ -1,0 +1,3 @@
+echo This job is running automatically
+date /T
+time /T
