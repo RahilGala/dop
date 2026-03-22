@@ -1,0 +1,25 @@
+FROM php:8.2-apache
+COPY . /var/www/html/
+EXPOSE 80
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dockerfile form</title>
+</head>
+<body>
+    <h2>Simple form (Docker)</h2>
+    <form action="submit.php" method="post">
+        Name:
+        <input type="text" name="username" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+<?php
+$name = $_POST['username'];
+echo "<h1>Hello, $name!</h1>";
+echo "<p>This response is generated dynamically using PHP inside Docker.</p>";
+?>
